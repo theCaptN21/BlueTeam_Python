@@ -16,9 +16,9 @@ Output = 'HaHaHaHa'
 Input = "my_string"
 Output = 'my_string'
 
-#This is an example of an index
+#This is an example of an index that locates the position in the string for the letter "t"
 Input = "my_string".find('t')
-Output = 4 (locates the position in the string where t is first found)
+Output = 4
 
 #This sets the characters to lowercase in a string
 Input = "TeStInG".lower
@@ -27,8 +27,8 @@ Output = 'testing'
 #This is to print a new line
 Input = print("New\nLine")
 Output = 
- New 
- Line
+New 
+Line
  
 #This is how to use single quotes inside of double quotes
 Input = "'Single' in Double"
