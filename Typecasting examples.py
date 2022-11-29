@@ -12,7 +12,7 @@ Output = '1'
 
 #This is an example of a boolean (almost everything will have a value of true)
 Input = bool(1)
-Output = true
+Output = True
 
 #This is an example of returning the false value
 Input = 1 and 0
