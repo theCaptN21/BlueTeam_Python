@@ -23,6 +23,6 @@ Input = 5/3
 Output = 1.666666..7
 
 #This how to use exponents
-Inout = 2 ** 3
+Input = 2 ** 3
 Output = 8
 
