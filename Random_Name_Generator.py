@@ -8,7 +8,6 @@
 
 import random
 import string
-import time
 
 
 #Random name generator function
@@ -21,23 +20,19 @@ for _ in department:
     
     if department == "Accounting" or department.lower() == "accounting":
         print("Verification in process, one moment please...")
-        time.sleep(5)
         break
     
     elif department == "FinOps" or department.lower() == "finops":
         print("Verification in process, one moment please...")
-        time.sleep(5)
         break
     
     elif department == "Marketing" or department.lower() == "marketing":
         print("Verification in process, one moment please...")
-        time.sleep(5)
         break
     
     else:
         print("Error ❌: Department not verified. Enter the correct Department to gain access to this Name Generator.")
         raise TimeOut
-        time.sleep(5)  
 
 number = int(input("Input the number of EC2 instances that require names: "))
     
@@ -48,7 +43,6 @@ elif number > 0:
     
 #Results should be printed
 print("\n...Results are being generated...\n")
-time.sleep(5)
 print("Here are your new EC2 Instance Names!!")
 
 for _ in range(1, number + 1):
