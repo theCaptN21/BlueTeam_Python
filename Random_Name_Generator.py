@@ -32,8 +32,8 @@ for _ in department:
     
     else:
         print("Error ❌: Department not verified. Enter the correct Department to gain access to this Name Generator.")
-        raise TimeOut
-
+        exit()
+        
 number = int(input("Input the number of EC2 instances that require names: "))
     
 if number < 0:
@@ -51,6 +51,7 @@ for _ in range(1, number + 1):
     print("Your New EC2 Instance Name : ", unique_ID_name)
     
 print("Please visit Katoria's name generator again!! 😊")
+
 
 
 
