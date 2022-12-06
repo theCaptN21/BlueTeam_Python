@@ -44,7 +44,7 @@ Output = True
 #This is an example of using the 'fibonacci sequence' with a function for recursion (calling a function from within itself):
 1, 1, 2, 3, 5, 8, 13
 
-f(n) = f(n-2) + f(n-1)
+f(n) = f(n - 2) + f(n - 1)
 
 f(5) = f(3) + f(4)
 f(5) = f(1) + f(2) + f(2) + f(3)
