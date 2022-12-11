@@ -9,10 +9,16 @@
 import random
 import string
 
+#The limit for the extended ASCII Character set
+MAX_LIMIT = 200
+ 
+random_string = ''
+ 
+print(random_string, len(random_string))
 
 #Random name generator function
-def string_generator(size=6, string=string.ascii_letters + string.digits):
-    return ''.join(random.choice(string) for _ in range(size))
+def string_generator(size=10, string=string.ascii_letters + string.digits):
+    return ''.join(random.choice(string) for _ in range(10))
 
 department = input("Are you a member of Accounting, FinOps, or Marketing? If so, enter the dept name.\n").upper()  
     
@@ -51,7 +57,4 @@ for _ in range(1, number + 1):
     print("Your New EC2 Instance Name : ", unique_ID_name)
     
 print("Please visit Katoria's name generator again!! 😊")
-
-
-
 
