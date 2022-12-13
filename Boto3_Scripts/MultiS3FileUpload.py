@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 #Uploading multiple files
 import os
 import glob
