@@ -15,7 +15,7 @@ def lambda_handler(event, context):
     
     sqs = boto3.client("sqs")
     response = sqs.send_message(
-        QueueUrl = 'YourQueueName', 
+        QueueUrl = 'YourQueueURL', 
         MessageBody = timestamp
     )
 
@@ -28,7 +28,7 @@ def lambda_handler(event, context):
     timestamp = (f"Here is the current time: {current_time}")
     
     response = sqs.send_message(
-        QueueUrl = 'YourQueueName', 
+        QueueUrl = 'YourQueueURL', 
         MessageBody = timestamp
     )
   
