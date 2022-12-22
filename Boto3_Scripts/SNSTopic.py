@@ -18,17 +18,17 @@ def create_topic(name):
     """
     try:
         topic = sns_client.create_topic(Name=name)
-        logger.info(f'Created SNS topic {name}.')
+        logger.info(f'Created the SNS topic {name}.')
 
     except ClientError:
-        logger.exception(f'Could not create SNS topic {name}.')
+        logger.exception(f'Unable to create the SNS topic {name}.')
         raise
     else:
         return topic
         
 def subscribe(topic, protocol, endpoint):
     """
-    Subscribe to a topic using endpoint as email OR SMS
+    Subscribe to a topic using the endpoint as email OR SMS
     """
     try:
         subscription = sns_client.subscribe(
@@ -47,7 +47,7 @@ def subscribe(topic, protocol, endpoint):
 if __name__ == '__main__':
 
     topic_name = 'wk-15-sns-topic'
-    logger.info(f'Creating SNS topic {topic_name}...')
+    logger.info(f'Creating the SNS topic {topic_name}...')
     topic = create_topic(topic_name)
     
     topic_arn = 'your-topic-ARN'
