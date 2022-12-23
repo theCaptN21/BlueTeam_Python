@@ -16,7 +16,7 @@ def lambda_handler(event, context):
     sqs = boto3.client("sqs")
     response = sqs.send_message(
         QueueUrl = 'YourQueueURL', 
-        MessageBody = timestamp
+        MessageBody = random_number
     )
 
 #Use this script if you'd like to create an SQS message for the date and time    
