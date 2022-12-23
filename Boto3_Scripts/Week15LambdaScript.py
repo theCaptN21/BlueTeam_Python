@@ -1,8 +1,8 @@
 from __future__ import print_function
-import json
-import boto3
 from random import randint
 from datetime import datetime
+import json
+import boto3
 
 print('Function is loading')
 
